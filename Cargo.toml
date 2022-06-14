@@ -1,0 +1,20 @@
+[package]
+name = "termsketch"
+version = "0.1.0"
+authors = ["Ulyssa <git@ulyssa.dev>"]
+repository = "https://github.com/ulyssa/termsketch"
+homepage = "https://github.com/ulyssa/termsketch"
+readme = "README.md"
+description = "A command-line image to text conversion tool"
+license = "Apache-2.0"
+edition = "2018"
+exclude = [".github", "CONTRIBUTING.md"]
+
+[dependencies]
+clap = {version = "3.2.1", features = ["derive"]}
+font-kit = "0.10"
+pathfinder_geometry = "^0.5"
+image = "0.23"
+dssim-core = "3.0"
+imgref = "^1.7"
+rayon = "^1.5"
